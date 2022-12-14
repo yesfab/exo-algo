@@ -1,0 +1,30 @@
+tri_Insertion
+
+PROCEDURE tri_Insertion ( Tableau a[1:n])
+    POUR i VARIANT DE 2 A n FAIRE
+        INSERER a[i] à sa place dans a[1:i-1];
+FIN PROCEDURE;
+
+
+tri_Selection
+
+PROCEDURE tri_Selection ( Tableau a[1:n])
+    POUR i VARIANT DE 1 A n - 1 FAIRE
+        TROUVER [j] LE PLUS PETIT ELEMENT DE [i + 1:n];
+        ECHANGER [j] ET [i];
+FIN PROCEDURE;
+
+tri_Bulle
+
+PROCEDURE tri_bulle ( TABLEAU a[1:n])
+passage ← 0
+REPETER
+    permut ← FAUX
+    POUR i VARIANT DE 1 A n - 1 - passage FAIRE
+        SI a[i] > a[i+1] ALORS
+            echanger a[i] ET a[i+1]
+            permut ← VRAI
+        FIN SI
+    FIN POUR
+    passage ← passage + 1
+TANT QUE permut = VRAI
