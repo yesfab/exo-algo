@@ -1,9 +1,15 @@
 tri_Insertion
 
-PROCEDURE tri_Insertion ( Tableau a[1:n])
-    POUR i VARIANT DE 2 A n FAIRE
-        INSERER a[i] à sa place dans a[1:i-1];
-FIN PROCEDURE;
+PROCEDURE tri_Insertion ( Tableau t)
+    n ← taille tableau t
+    POUR i VARIANT DE 0 à n
+        min ← i
+        POUR j de i + 1 à n - 1
+              si t[j] < t[min], alors min ← j
+        FIN POUR
+        si min ≠ i, alors échanger t[i] et t[min]
+    FIN POUR
+FIN PROCEDURE
 
 
 tri_Selection
