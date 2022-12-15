@@ -9,6 +9,7 @@ def tri_par_selection(lst):
 
         min_i = l 
         affectation += 1
+        
         for i in range(l, len(lst)):
 
             comparaison += 1
