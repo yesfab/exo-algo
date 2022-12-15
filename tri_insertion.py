@@ -15,3 +15,16 @@ tri_insertion(tab)
 print ("Le tableau trié est:")
 for i in range(len(tab)): 
     print ("% d" % tab[i])
+
+"""
+PROCEDURE tri_Insertion ( Tableau t)
+    n ← taille tableau t
+    POUR i VARIANT DE 0 à n
+        min ← i
+        POUR j de i + 1 à n - 1
+              si t[j] < t[min], alors min ← j
+        FIN POUR
+        si min ≠ i, alors échanger t[i] et t[min]
+    FIN POUR
+FIN PROCEDURE
+"""
