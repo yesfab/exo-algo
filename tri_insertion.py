@@ -1,6 +1,6 @@
 # Programme Python pour l'implémentation du tri par insertion
 def tri_insertion(tab): 
-    # Parcour de 1 à la taille du tab
+    # Parcours de 1 à la taille du tab
     for i in range(1, len(tab)): 
         k = tab[i] 
         j = i-1
@@ -10,11 +10,11 @@ def tri_insertion(tab):
         tab[j + 1] = k
 
 #partie test
-tab = [98, 22, 15, 32, 2, 74, 63, 70]
+tab = [5, 3, 1, 4, 2]
 tri_insertion(tab) 
 print ("Le tableau trié est:")
 for i in range(len(tab)): 
-    print ("% d" % tab[i])
+    print(tab[i])
 
 """
 PROCEDURE tri_Insertion ( Tableau t)
