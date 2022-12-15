@@ -24,6 +24,6 @@ def tri_par_selection(lst):
     
     operation = affectation + comparaison
 
-    return lst, operation
+    return lst, operation, affectation
 
 print(tri_par_selection([2,7,1,0,8,1, 23, 76, 35, 45]))
