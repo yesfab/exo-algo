@@ -11,4 +11,4 @@ def tri_par_selection(lst):
     return lst
 
 print(tri_par_selection([2,7,1,0,8,1]))
-assert tri_par_selection([5, 3, 1, 4, 2]) == [1,2,3,4,5]&
+assert tri_par_selection([5, 3, 1, 4, 2]) == [1,2,3,4,5]
