@@ -25,4 +25,4 @@ def tri_par_selection(lst):
 
     return lst, operation
 
-print(tri_par_selection([2,7,1,0,8,1]))
+print(tri_par_selection([2,7,1,0,8,1, 23, 76, 35, 45]))
