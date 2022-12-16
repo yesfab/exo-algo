@@ -2,6 +2,7 @@ def tri_bulle(tableau):
 
     affectation = 0
     comparaison = 0
+    compteur = 0
 
     permutation = True
     passage = 0
@@ -16,23 +17,25 @@ def tri_bulle(tableau):
         affectation += 1
 
         for en_cours in range(0, len(tableau) - passage):
-
+            
             comparaison += 1
             if tableau[en_cours] > tableau[en_cours + 1]:
 
+                compteur += 1
+                
                 permutation = True
                 affectation +=1
 
                 # On echange les deux elements
-                tableau[en_cours], tableau[en_cours + 1]
-                affectation += 1
-
+                tableau[en_cours], tableau[en_cours + 1] = \
                 tableau[en_cours + 1],tableau[en_cours]
                 affectation += 1
 
     operation = affectation + comparaison
 
-    return tableau , operation
+    return tableau , operation , compteur
 
-print(tri_bulle([2,7,1,0,8,1, 23, 76, 35]))
+print(tri_bulle([1, 2 ,3,  4 ,5 ,6,7,8,9]))
+print(tri_bulle([9,8,7,6,5,4,3,2,1]))
+
 

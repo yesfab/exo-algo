@@ -4,6 +4,7 @@ def tri_par_selection(lst):
 
     affectation = 0
     comparaison = 0
+    compteur = 0
 
     for l in range(len(lst)):
 
@@ -15,7 +16,8 @@ def tri_par_selection(lst):
             comparaison += 1
             if lst[i] < lst[min_i]:
 
-                
+                compteur += 1
+
                 min_i = i
                 affectation += 1 
 
@@ -24,6 +26,7 @@ def tri_par_selection(lst):
     
     operation = affectation + comparaison
 
-    return lst, operation, affectation
+    return lst, operation, compteur
 
-print(tri_par_selection([2,7,1,0,8,1, 23, 76, 35, 45]))
+print(tri_par_selection([1, 2 ,3,  4 ,5 ,6,7,8,9]))
+print(tri_par_selection([9,8,7,6,5,4,3,2,1]))
