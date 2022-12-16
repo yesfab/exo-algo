@@ -3,24 +3,27 @@ def tri_insertion(tab):
     # Parcours de 1 à la taille du tab
     affectation = 0
     comparaison = 0
+    compteur = 0
     for i in range(1, len(tab)): 
         k = tab[i] 
         j = i-1
         affectation += 2
+        
         while j >= 0 and k < tab[j] : 
             affectation += 2
             tab[j + 1] = tab[j] 
             j -= 1
+            compteur += 1
         tab[j + 1] = k
         affectation += 1
 
     operation = affectation + comparaison
 
-    return tab,operation
+    return tab,operation,compteur
 
 #partie test
-tab = [5, 3, 1, 4, 2]
-print(tri_insertion([5, 3, 1, 4, 2, 10])) 
+print(tri_insertion([1, 2 ,3,  4 ,5 ,6,7,8,9,10]))
+print(tri_insertion([10,9,8,7,6,5,4,3,2,1]))
 
 """
 PROCEDURE tri_Insertion ( Tableau t)
