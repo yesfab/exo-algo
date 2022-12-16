@@ -28,5 +28,5 @@ def tri_par_selection(lst):
 
     return lst, operation, compteur
 
-print(tri_par_selection([1, 2 ,3,  4 ,5 ,6,7,8,9]))
-print(tri_par_selection([9,8,7,6,5,4,3,2,1]))
+print(tri_par_selection([1, 2 ,3,  4 ,5 ,6,7,8,9,10]))
+print(tri_par_selection([10,9,8,7,6,5,4,3,2,1]))
