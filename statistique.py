@@ -8,7 +8,7 @@ from tri_selection import tri_par_selection
 
 def stat (min: int, max: int, step: int, nbr: int):
 
-   for i in range(mini, max + 1, step):
+   for i in range(min, max + 1, step):
         for j in range(1, nbr + 1, 1):
             m = numpy.random.randint(10, size=(i))
             # Exercice 2 tri par sélection
@@ -28,7 +28,4 @@ def stat (min: int, max: int, step: int, nbr: int):
             counter = 0
         mean = statistics.mean(t)
         print(i, mean)
-    
 
-
-stat(10,20,5,10)
