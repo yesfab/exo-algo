@@ -6,11 +6,11 @@ def tri_insertion(tab):
     for i in range(1, len(tab)): 
         k = tab[i] 
         j = i-1
-        affectation += 1
+        affectation += 2
         while j >= 0 and k < tab[j] : 
-                tab[j + 1] = tab[j] 
-                j -= 1
-                comparaison += 1
+            affectation += 2
+            tab[j + 1] = tab[j] 
+            j -= 1
         tab[j + 1] = k
         affectation += 1
 
