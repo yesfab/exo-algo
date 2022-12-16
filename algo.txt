@@ -20,17 +20,31 @@ PROCEDURE tri_selection ( list a[1:n])
         ECHANGER [l] ET [i];
 FIN PROCEDURE;
 
-tri_Bulle
 
-PROCEDURE tri_bulle ( TABLEAU a[1:n])
-passage ← 0
-REPETER
-    permut ← FAUX
-    POUR i VARIANT DE 1 A n - 1 - passage FAIRE
-        SI a[i] > a[i+1] ALORS
-            echanger a[i] ET a[i+1]
-            permut ← VRAI
-        FIN SI
-    FIN POUR
-    passage ← passage + 1
-TANT QUE permut = VRAI
+
+tri_bulle ( TABLEAU)
+    POUR i dans la taille du tableau
+        pour u variant de 0 a taille du tableau
+            si tableau [u+i] inferieur tableau[u]
+            tableau[u+i] = tableau [u]
+            tableau [u] = tableau[u+i] 
+
+
+debut tri_bulle-opti(l)
+
+continue <- VRAI
+passage <- 0
+
+tant que continue == VRAI:
+    continue <- FAUX
+    passage <- passage +1
+    Pour i allant de 0  à lent(l)-passage:
+    Si l[i] > l[i+1]
+        continue <- VRAI
+        provisoire <- l[i+1]
+        l[i] <- provisoire
+    fin si
+    fin Pour
+fin tant que
+
+fin tri_bulle

@@ -1,4 +1,4 @@
-def tri_bulle(tableau):
+def tri_bulle_opti(tableau):
 
     affectation = 0
     comparaison = 0
@@ -35,6 +35,6 @@ def tri_bulle(tableau):
 
     return tableau, operation , compteur
 
-print(tri_bulle([1, 2 ,3,  4 ,5 ,6,7,8,9,10]))
-print(tri_bulle([10,9,8,7,6,5,4,3,2,1]))
+print(tri_bulle_opti([1, 2 ,3,  4 ,5 ,6,7,8,9,10]))
+print(tri_bulle_opti([10,9,8,7,6,5,4,3,2,1]))
 
