@@ -24,8 +24,8 @@ def stat (min: int, max: int, step: int, nbr: int):
                     m[k] = m[minimum]
                     m[minimum] = temp
                     # Fin tri par sélection
-            t.append(counter)
+            k.append(counter)
             counter = 0
-        mean = statistics.mean(t)
+        mean = statistics.mean(j)
         print(i, mean)
 
