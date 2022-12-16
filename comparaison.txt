@@ -1,0 +1,20 @@
+Selection:
+
+meilleur des cas 0
+pire des cas 25
+
+
+bulle:
+
+meilleur des cas 0
+pire des cas 45
+
+bulle_opti:
+
+meilleur des cas 0
+pire des cas 45
+
+insertion:
+
+meilleur des cas 0 
+pire des cas  45

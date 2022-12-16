@@ -7,23 +7,23 @@ def tri_par_selection(lst):
     compteur = 0
 
     for l in range(len(lst)):
-
+        
         min_i = l 
         affectation += 1
         
         for i in range(l, len(lst)):
-
+            
             comparaison += 1
             if lst[i] < lst[min_i]:
-
+                
                 compteur += 1
-
                 min_i = i
                 affectation += 1 
 
         lst[l], lst[min_i] = lst[min_i], lst[l] 
+        
         affectation += 3
-    
+        
     operation = affectation + comparaison
 
     return lst, operation, compteur
